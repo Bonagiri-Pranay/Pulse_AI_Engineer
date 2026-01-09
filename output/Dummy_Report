@@ -1,0 +1,7 @@
+date       delivery_delay   app_crash   late_order   food_quality   refund_issue
+2024-06-01      12              3           8             4                1
+2024-06-02      15              2           10            5                2
+2024-06-03      14              4           9             3                2
+2024-06-04      11              3           7             4                1
+2024-06-05      13              2           6             6                1
+
