@@ -1,36 +1,36 @@
 # Pulsegen Senior AI Engineer Assignment — Trend Analysis Agent
 
-This repository implements the full assignment using an **Agentic AI pipeline** to extract, merge, clean, and trend Google Play Store reviews for Swiggy / Zomato from **June 2024 → Today**.
+This repository implements the full assignment using an **Agentic AI pipeline** to extract, merge, clean, and trend Google Play Store reviews for Swiggy / Zomato from June 2024 → Today.
 
 ---
 
 ##  Key Features
 
-✔ Daily batch ingestion  
-✔ High-recall topic extraction agent (LLM)  
-✔ Topic deduplication + merging agent  
-✔ Topic taxonomy agent  
-✔ Trend table generation (T-30 → T)  
-✔ OpenAI API (Option A)  
-✔ Complete modular pipeline  
+ Daily batch ingestion  
+ High-recall topic extraction agent (LLM)  
+ Topic deduplication + merging agent  
+ Topic taxonomy agent  
+ Trend table generation (T-30 → T)  
+ OpenAI API or Gemini API  
+ Complete modular pipeline  
 
 ---
 
 ##  Architecture Overview
 
-1. **Ingestion Agent**  
+1. Ingestion Agent  
    Pulls reviews daily using `google_play_scraper`.
 
-2. **Extraction Agent**  
+2. Extraction Agent  
    Uses LLM to extract short, high-recall issue topics from each review.
 
-3. **Merge Agent**  
+3. Merge Agent  
    Deduplicates similar topics using embeddings + clustering + LLM canonicalization.
 
-4. **Taxonomy Agent**  
+4. Taxonomy Agent 
    Normalizes topics into consistent categories.
 
-5. **Trend Agent**  
+5. Trend Agent 
    Builds a T-30 to T trend table for all topics.
 
 ---
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 ### 2. Set OpenAI Key
 ```
-export OPENAI_API_KEY="your-key-here"
+export OPENAI_API_KEY="your-key-here" or GEMINI_API_KEY="your-key-here"
 ```
 
 ### 3. Run pipeline
@@ -84,11 +84,8 @@ food stale | 5 | ... | 11
 
 ##  Deliverables (per assignment)
 
-✔ Private GitHub repository  
-✔ Video demonstration  
-✔ Sample reports  
+ Private GitHub repository  
+ Video demonstration  
+ Sample reports  
 
----
-
-## Author
-You — Senior AI Engineer Applicant  
+ 
